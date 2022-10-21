@@ -1,6 +1,17 @@
 version: '2'
 
 services:
+
+  app-lb-round-robin:
+    image: nontoa10/app-lb-round-robin:latest
+    container_name: app-lb-round-robin
+    ports:
+      - "9191:9191"
+    links:
+      - "log-service1:log-service1"
+      - "log-service2:log-service2"
+      - "log-service3:log-service3"
+
   log-service1:
     image: nontoa10/log-service:latest
     container_name: log-service1
