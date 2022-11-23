@@ -1,4 +1,4 @@
-# Taller1-AYGO
+# Workshop1-AYGO
 
 This workshop was carried out with the purpose of making an introduction of virtualization and distributed programming.
 
